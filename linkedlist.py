@@ -69,7 +69,7 @@ class LinkedList:
             self.tail = None
         return temp
 
-    def insertatindex(self, index, value):
+    def insert_at_index(self, index: int, value: int):
         if index < 0 or index > self.length:
             return False
         if index == 0:
@@ -86,7 +86,7 @@ class LinkedList:
         temp.next = newnode
         self.length += 1
 
-    def deleteatindex(self, index):
+    def delete_at_index(self, index: int):
         if index < 0 or index >= self.length:
             return False
         if index == 0:
@@ -126,7 +126,7 @@ mylinkedlist.append(s2)
 mylinkedlist.append(s3)
 mylinkedlist.prepend(s4)
 mylinkedlist.prepend(s5)
-mylinkedlist.insertatindex(0, s2)
-mylinkedlist.deleteatindex(2)
+mylinkedlist.insert_at_index(0, s2)
+mylinkedlist.delete_at_index(2)
 mylinkedlist.print_list()
 
